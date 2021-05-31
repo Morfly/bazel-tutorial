@@ -1,10 +1,7 @@
 # ===========
 # Android SDK
 # ===========
-android_sdk_repository(
-    name = "androidsdk",
-    api_level = 29,
-)
+android_sdk_repository(name = "androidsdk")
 
 
 # =====================
