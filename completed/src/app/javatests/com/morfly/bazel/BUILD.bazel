@@ -1,0 +1,11 @@
+java_test(
+    name = "main_unit_tests",
+    test_class = "com.morfly.bazel.UtilsTest",
+    srcs = [
+        "UtilsTest.java"
+    ],
+    deps =[
+        "//src/app/java/com/morfly/bazel:main_screen",
+        "//src/jvmlib/kotlin/com/morfly/bazel:kotlin_library"
+    ]
+)

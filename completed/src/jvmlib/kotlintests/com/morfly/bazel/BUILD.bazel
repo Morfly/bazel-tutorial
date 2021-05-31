@@ -1,0 +1,14 @@
+load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_jvm_test")
+
+
+kt_jvm_test(
+    name = "jvmlib_unit_tests",
+    test_class = "com.morfly.bazel.KotlinLibraryTest",
+    srcs = [
+        "KotlinLibraryTest.kt"
+    ],
+    deps = [
+        "@maven//:junit_junit",
+        "//src/jvmlib/kotlin/com/morfly/bazel:kotlin_library"
+    ]
+)

@@ -1,0 +1,14 @@
+load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
+
+package(default_visibility = ["//src:__subpackages__"])
+
+kt_android_library(
+    name = "android_library",
+    srcs = glob([
+        "*.kt"
+    ]),
+    manifest = "AndroidManifest.xml",
+    deps = [
+        "//src/jvmlib/kotlin/com/morfly/bazel:kotlin_library"
+    ]
+)

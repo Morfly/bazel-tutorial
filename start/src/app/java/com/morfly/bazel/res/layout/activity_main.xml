@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/libraryDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/thinking_face"
+        android:textColor="@color/bazel_green"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/showDescriptionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@color/bazel_green"
+        android:text="@string/about_library_button"
+        android:textColor="@color/color_on_bazel_green" />
+</LinearLayout>

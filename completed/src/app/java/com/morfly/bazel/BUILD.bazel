@@ -1,0 +1,18 @@
+package(default_visibility = ["//src:__subpackages__"])
+
+android_library(
+    name = "main_screen",
+    srcs = glob([
+        "MainActivity.java",
+        "Utils.java"
+    ]),
+    manifest = "AndroidManifest.xml",
+    resource_files = glob([
+        "res/**"
+    ]),
+    deps = [
+        "//src/jvmlib/kotlin/com/morfly/bazel:kotlin_library",
+        "//src/androidlib/kotlin/com/morfly/bazel:android_library",
+        "@maven//:androidx_constraintlayout_constraintlayout"
+    ]
+)
