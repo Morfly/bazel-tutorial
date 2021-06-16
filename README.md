@@ -154,18 +154,14 @@ Now when you machine is ready to work let's build an Android Bazel app.
 
 Refer to the following repository structure to locate files required for this workshop:
 ```
-bazel-workshop-series
-|
-└── fundamentals
+bazel-tutorial
     |
-    └── Android
-        |
-        └── start  <- working directory for this workshop
-        |
-        └── competed
+    └── start  <- working directory for this workshop
+    |
+    └── competed
 ```
 
-Open `{your_local_path}/bazel-workshop-series/fundamentals/Android/start` project with your favorite IDE / Text Editor.
+Open `{your_local_path}/bazel-tutorial/start` project with your favorite IDE / Text Editor.
 
 To check your progress use `completed` project directory which contains the resulting source code for this workshop.
 
@@ -223,8 +219,8 @@ It is also possible to set specific version of Android SDK to be used in your pr
 android_sdk_repository(
     name = "androidsdk",
     path = "Users/bruce.wayne/Library/Android/sdk`",
-    api_level = 29,                # new
-    build_tools_version = "29.0.3" # code
+    api_level = 29,                # new code
+    build_tools_version = "29.0.3" # new code
 )
 ```
 
