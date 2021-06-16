@@ -155,10 +155,10 @@ Now when you machine is ready to work let's build an Android Bazel app.
 Refer to the following repository structure to locate files required for this workshop:
 ```
 bazel-tutorial
-    |
-    └── start  <- working directory for this workshop
-    |
-    └── competed
+|
+└── start  <- working directory for this workshop
+|
+└── competed
 ```
 
 Open `{your_local_path}/bazel-tutorial/start` project with your favorite IDE / Text Editor.
