@@ -144,7 +144,7 @@ $ brew install buildifier
 
 _In order to make buildifier automatically find all Starlark files (i.e. BUILD, WORKSPACE, .bzl, or .sky) in a directory recursively:_
 ```bash
-$ buildifier -r {your_local_path}/bazel-workshop-series/fundamentals/Android/start
+$ buildifier -r {your_local_path}/bazel-tutorial/start
 ```
 
 <br>
@@ -174,7 +174,7 @@ _Directories containing a file called WORKSPACE are considered the root of a wor
 
 Create a `WORPSPACE` file in the **root** project directory:
 
-`{your_local_path}/bazel-workshop-series/fundamentals/Android/start/WORKSPACE`
+`{your_local_path}/bazel-tutorial/start/WORKSPACE`
 
 > **Note:** It is possible to name the file as `WORKSPACE.bazel` as well. Bazel will consider these two options equally.
 
@@ -301,7 +301,7 @@ $ bazel build //src/app
 If you run the command above you will see the following error:
 
 ```
-ERROR: {your_local_path}/bazel-workshop-series/fundamentals/Android/completed/src/app/BUILD.bazel:1:15: 
+ERROR: {your_local_path}/bazel-tutorial/completed/src/app/BUILD.bazel:1:15: 
 in android_binary rule //src/app:app: target '//src/app/java/com/morfly/bazel:main_screen' 
 is not visible from target '//src/app:app'. 
 Check the visibility declaration of the former target if you think the dependency is legitimate
